@@ -5,16 +5,16 @@
                 Rastreamento Encomenda
             </h1>
             <p class="mt-4 text-lg">
-                Código de Rastreamento: <span class="font-semibold">TESTE123</span>
+                Código de Rastreamento: <span class="font-semibold">{{ $fretes->codigo_rastreio }}</span>
             </p>
             <p class="mt-2">
                 Status:
                 <span class="px-3 py-1 rounded-full">
-                    Entregue
+                    {{ $fretes->status }}
                 </span>
             </p>
             <p class="mt-2">
-                Destino: <span class="font-semibold">Av. Paulista, 1000 - Centro (São Paulo)</span>
+                Destino: <span class="font-semibold">{{ $fretes->destino }}</span>
             </p>
         </div>
 
